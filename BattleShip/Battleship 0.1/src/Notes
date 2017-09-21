@@ -1,0 +1,34 @@
+JFrames - Creates a window where components can be added to give it life
+	Canvas - Added to JFrame to allow for added graphics
+
+Threads - Allows a program to run independently in a processor
+	synchronized - Allows threads to run along side another program 
+					and when changing a thread, nothing gets mixed.
+					
+try-catch block - A try block allows for the code inside to "try" and run the code
+					and if it fails will go to a catch block. The catch block catches
+					and exceptions in the code and throws a message.
+					
+Game loop:
+	- init() method to initialize everything
+	- tick() method to collect new data
+	- render() method to render everything
+		- private BufferStrategy bs;
+		- private Graphics gs;
+		- BufferStrategy: //Tells the screen what to draw by buffering, buffer - hidden computer screen 
+			- Used with Canvas
+			- Stops flickering
+			Buffer -> Buffer - > Screen
+		- Graphics - draws, similar to a paintbrush/pencil
+			- bs.show() - after drawing is done
+			- gs.dispose() - get's rid of old instructions (i think)
+			- gs.clearRect(x, y, width, height) - will clear the given section of screen
+			- gs.setColor(Color color) sets color to use 
+res folders - res stand for resources and holds all the image resources
+textures folder - hold all the images/textures
+images are viewed and interprated as a BufferdImage Object
+To use an image directly you must import the res folder to the build path
+ - selct the project --> project --> properties --> java build path --> libraries -- > add class folder
+ sprite sheet - an image that consists of all the images you will need/want for a game
+ 
+ To see images in eclipse in the textures folder, you must hit F5
